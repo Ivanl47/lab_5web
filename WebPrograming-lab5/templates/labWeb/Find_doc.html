@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab_3</title>
+    <link rel="stylesheet" href="{% static '/labWeb/css/Find_doc/Style_doc.css' %}">
+
+</head>
+<body>
+    <header>
+        <div class="search">
+            <input type="search" name="search" id="search">
+            <button class="button" type="submit" id="search_butt">Search</button>
+            <button class="button" type="submit" id="create_butt">Create</button>
+        </div>
+
+        <div class="under__block">
+            <article>
+                <div class="sort">
+                    <p>Sort all planes to Fuel</p>
+                    <button id="sort_butt" class="button"> Sort</button>
+                </div>
+
+                <div class="fuel">
+                    <p class="text_fuel">Amm... You need </p>
+                    <button type="submit" class="button" id="Fuel">FUEL !!!</button>
+                    <ul class="Container">
+                        <li><p>Fuel in all figter: </p><br>
+                            <p id="Fuel__text"></p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <aside id = 'inSite'>
+                <form id="ObjForm">
+                    <div class="list__object" id="list__object">
+
+                    </div>
+                </form>
+
+
+                <div style="display: none" id="Create__block">
+                    <div class="desc">
+                        <label for="name_inp">Name</label><br>
+                        <input type="text" name="name_inp" id="name_inp"><br>
+                        <label for = "desc">Desc</label><br>
+                        <input type="text" name="desc" id="desc_inp">
+                    </div>
+                    <div class="value">
+                        <label for="val">Value</label><br>
+                        <input type="number" name="val" id="fuel_inp">
+                    </div>
+                    <div class="button_con">
+                        <button class="button" type="submit" id="Create_inp_in">Create</button>
+                        <button class="button" type="submit" id="back_in">Back</button>
+                    </div>
+                </div>
+
+                 <div style="display: none" id="Edit__block">
+                    <div class="desc">
+                        <label for="nameEd_inp">Name</label><br>
+                        <input type="text" name="nameEd_inp" id="nameEd_inp"><br>
+                        <label for = "desc">Desc</label><br>
+                        <input type="text" name="desc" id="descEd_inp"><br>
+                    </div>
+                    <div class="value">
+                        <label for="valEd">Value</label><br>
+                        <input type="number" name="valEd" id="fuelEd_inp">
+                    </div>
+                    <div class="button_con">
+                        <button class="button" type="submit" id="Edit_butt">Edit</button>
+                        <button class="button" type="submit" id="backEd_in">Back</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </header>
+
+
+<script type="module" src="{% static '/labWeb/js/CU.js' %}"></script>
+<script type="module" src="{% static '/labWeb/js/js_lab_2.js' %}"></script>
+    </body>
+</html>

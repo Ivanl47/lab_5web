@@ -1,0 +1,107 @@
+/*Header*/
+
+ header{
+     width: 100%;
+     padding-top: 10%;
+     padding-bottom: 150px;
+     margin-right:0px ;
+     padding-right: 0px;
+     justify-content:space-around ;
+     display: flex;
+ }
+.vector{
+    margin-left: 7px;
+}
+    header article{
+        margin-left: 90px;
+        text-align: left;
+        max-height: 20%;
+        max-width: 35%;
+    }
+        header article h2{
+            font-weight: 700;
+            font-size: 40px;
+        }
+        header article hr{
+            border: 2px solid black;
+            font-weight: 700;
+            width: 40px;
+            margin-left: 0px;
+        }
+        header article .text{
+            color: darkgray;
+            font-size: 20px;
+            font-weight: 200;
+            margin-bottom: 55px;
+        }
+        header article .button_header{
+            margin: 50px 0px;
+            padding: 15px 30px;
+            border: 2px solid #458FF6;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 20px;
+            color: #458FF6;
+        }
+        header article .button_header:hover{
+            background-color: #458FF6;
+            border: 5px solid white;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 20px;
+            color: white;
+        }
+    header aside{
+        max-height: 20%;
+        max-width: 50%;
+    }
+        header aside img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        /*Media*/
+@media screen and (max-width: 1050px){
+    header{
+        margin-left: 4.5%;
+        justify-content: center;
+        text-align: center;
+        display: block;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+        header article{
+            max-width: none;
+            text-align: center;
+            margin-left: auto;
+        }
+            header article h2{
+                font-weight: 700;
+                font-size: calc(55px + 1.5vw);
+            }
+            header article hr{
+                margin-left: auto;
+            }
+            header article .text{
+                font-size: calc(35px + 1.5vw);
+                margin-bottom: 35px;
+            }
+            header article .button_header{
+                padding: 10px 20px;
+                margin-top: 150px;
+                border-radius: 12.5px;
+                font-size: calc(55px + 1.5vw);
+                color: #458FF6;
+        }
+
+            header article .button_header:hover{
+                padding: 10px 20px;
+                margin-top: 150px;
+                border-radius: 12.5px;
+                font-size: calc(55px + 1.5vw);
+                color: white;
+        }
+        header aside{
+            display: none;
+        }
+}

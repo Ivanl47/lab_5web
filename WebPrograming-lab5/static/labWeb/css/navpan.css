@@ -1,0 +1,110 @@
+body{
+    font-family: Calibri;
+    align-content: center;
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+}
+
+/*Navigation panel*/
+nav{
+    width: 100%;
+    padding: 15px 0px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+
+}
+    nav ul{
+        display: flex;
+        list-style-type: none;
+}
+    nav ul li{
+        margin-left: 5px;
+    }
+ nav article{
+        margin-left: 8%;
+        padding-top:25px ;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+        nav article .button{
+            font-size: 23px;
+            color: black;
+            text-decoration: none;
+            font-weight: 300;
+            margin-right: 20px;
+        }
+        nav article .button:hover{
+            margin-top: 15px;
+            font-size: 23px;
+            color: black;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    nav aside{
+        padding-top: 20px;
+        text-align: right;
+        justify-content: right;
+        display: flex;
+        margin-right: 5%;
+    }
+        nav aside .icon{
+            margin-top: 10px;
+            margin-bottom: 0px;
+            font-size: 33px;
+            padding-right: 10px;
+            width:27px;
+            height: 38px;
+            border:2px solid #458FF6;
+            background-color: #458FF6;
+            border-radius: 50%;
+            color: white;
+        }
+        nav aside .text{
+            margin-top: 15px;
+            margin-bottom: 0px;
+            font-size: 28px;
+            padding-left: 10px;
+        }
+
+
+        /*Media*/
+@media screen and (max-width: 1001px){
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav article{
+        margin-left: 0;
+    }
+    nav ul{
+        display: block;
+        text-align: center;
+    }
+    nav aside .icon{
+            margin-left: 20%;
+        }
+        nav ul li {
+            margin: 10px 0px;
+        }
+
+             nav article .button{
+                 font-size: calc(20px + 0.5vw);
+                 color: black;
+                 text-decoration: none;
+                 font-weight: 300;
+                 margin-right: 20px;
+        }
+        nav aside{
+            justify-content: center;
+            margin-left: 6%;
+        }
+}
+
+@media screen and (min-width: 1900px){
+    nav{
+        margin: 0px 15% 0px 9%;
+        max-width: 80%;
+    }
+}

@@ -1,0 +1,141 @@
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.bgr{
+    background-color: red;
+    color: white;
+}
+.button{
+    border: 0px solid white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-left: 10px;
+}
+
+
+.remove{
+    background-color: #458FF6;
+    color: white;
+}
+
+header{
+    margin:40px 20px 100px;
+}
+    header .search{
+        display: flex;
+        justify-content: center;
+    }
+        header .search input{
+            margin: 15px 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 18px;
+            width: 40%;
+        }
+        header .search .button{
+            margin-top: 7px;
+            border: 0px solid white;
+            border-radius: 5px;
+            padding: 10px 30px;
+            max-height: 40px;
+        }
+
+    header .under__block{
+        display: flex;
+    }
+        header .under__block article{
+            padding: 50px 3%;
+            border-right: 2px solid gray;
+        }
+            header .under__block article .sort{
+                margin:20px 20px ;
+            }
+            header .under__block article .fuel{
+                margin:50px 20px ;
+            }
+
+
+
+        header .under__block aside {
+            width: 50%;
+        }
+            header .under__block aside .list__object{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 20px;
+                padding: 30px;
+            }
+                header .under__block aside .list__object .object{
+                    border-radius: 15px;
+                    border-left: 2px solid black;
+                    border-bottom: 2px solid black;
+                    border-right: 2px solid black;
+                    max-width: 275px;
+                }
+                    header .under__block aside .list__object .object img{
+                        border-radius: 15px 15px 0px 0px;
+                    }
+                    header .under__block aside .list__object .object .object__button{
+                        margin: 0px 0px 10px 15px;
+                    }
+                    header .under__block aside .list__object .object .object__text{
+                        margin-left: 15px;
+                    }
+#Create__block{
+    width: 100%;
+}
+    #name_inp{
+        width: 80%;
+        height: 15%;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    #desc_inp{
+        width: 80%;
+        height: 15%;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    #fuel_inp{
+        width: 80%;
+        height: 15%;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    #Create__block .button_con{
+        padding: 15px;
+    }
+
+#Edit__block{
+    width: 100%;
+}
+    #nameEd_inp{
+        width: 80%;
+        height: 15%;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    #descEd_inp{
+        width: 80%;
+        height: 15%;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    #fuelEd_inp{
+        width: 80%;
+        height: 15%;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    #Edit__block .button_con{
+        padding: 15px;
+    }
+.dis_to_grid{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     gap: 10px;
+}

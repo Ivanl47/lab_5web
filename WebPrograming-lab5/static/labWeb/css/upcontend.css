@@ -1,0 +1,121 @@
+/*Span*/
+
+span{
+    width: 100%;
+    padding: 10px 50px;
+    margin-right: 0px;
+}
+    span h2{
+        font-weight: 700;
+        font-size: 40px;
+    }
+    span hr{
+        border: 2px solid black;
+        font-weight: 700;
+        width: 55px;
+    }
+
+    span article{
+        justify-content: center;
+        display: flex;
+    }
+        span article .container_article{
+            max-width: 22%;
+            padding: 30px 23px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.02);
+        }
+            span .container_article img{
+                max-height: 100%;
+                max-width: 100%;
+            }
+
+            span .container_article .text_container{
+                padding: 2px 35px;
+                color: darkgray;
+                font-size: 17px;
+                font-weight: 200;
+                margin-bottom: 55px;
+            }
+    span .img_bag{
+        padding-left: 150px;
+        position: absolute;
+        z-index: -1;
+    }
+    span .img_bag_big{
+        position: absolute;
+        right: 0;
+        top: 870px;
+        padding-bottom: 150px;
+        margin-right: 0px;
+        padding-right: 0px;
+        z-index: -1;
+
+    }
+    span .container_article .button{
+        text-decoration: none;
+        font-weight: 500;
+        padding: 5px 0px;
+        margin: 5px;
+        color: #458FF6;
+    }
+
+    span .span_div{
+        padding:60px 0px ;
+        text-align: center;
+    }
+
+    span .span_div a:hover{
+        background-color: #458FF6;
+        border: 2px solid white;
+        text-decoration: none;
+        color: white;
+    }
+        span .span_div a{
+            margin: 30px 60px;
+            padding: 15px 60px;
+            border: 2px solid #458FF6;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 30px;
+            color: #458FF6;
+        }
+
+        /*Media*/
+@media screen and (max-width: 1001px){
+   span{
+    margin-left: 20%;
+}
+    span .article{
+        margin-left: 3.5%;
+    }
+    span .span_div{
+        display: flex;
+        justify-content: center;
+    }
+    span article{
+        text-align: center;
+        justify-content: center;
+        display: block;
+    }
+
+    span article .container_article{
+            text-align: center;
+            margin-left: 10px;
+            max-width: 90%;
+            padding: 30px 23px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.02);
+        }
+    span .img_bag{
+        padding-left: 0;
+    }
+    span .img_bag_big{
+        margin-top: 1000px;
+    }
+}
+@media screen and (min-width: 1900px){
+    span .img_bag{
+        padding-left: 13%;
+    }
+}
